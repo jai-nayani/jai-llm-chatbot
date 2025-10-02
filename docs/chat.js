@@ -4,39 +4,8 @@
 const GEMINI_API_KEY = 'AIzaSyBP3x80wwVGfoCjNJoy01QrKsaaTzCAkgI';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent';
 
-// Resume knowledge base - embedded directly in frontend
-const RESUME_CONTEXT = `
-Jai Adithya Nayani is a software engineer specializing in AI/ML and full-stack development.
-
-TECHNICAL SKILLS:
-- Programming Languages: Python, Java, C++, JavaScript, SQL
-- ML/AI Frameworks: TensorFlow, PyTorch, scikit-learn, Keras
-- Cloud Platforms: AWS, Google Cloud Platform (GCP)
-- Web Technologies: FastAPI, React, Node.js, HTML/CSS
-- Databases: PostgreSQL, MongoDB, MySQL
-- Tools: Git, Docker, Kubernetes, Linux
-
-EXPERIENCE:
-- Strong background in machine learning and artificial intelligence
-- Experience with computer vision and natural language processing
-- Full-stack web development expertise
-- Cloud infrastructure and deployment
-- Data engineering and pipeline development
-
-PROJECTS:
-- Built AI-powered chatbots using RAG architecture
-- Developed machine learning models for various applications
-- Created full-stack web applications
-- Worked on computer vision projects
-- Implemented data processing pipelines
-
-INTERESTS:
-- Artificial Intelligence and Machine Learning
-- Building scalable systems
-- Solving real-world problems with technology
-- Open source contributions
-- Continuous learning and innovation
-`;
+// Resume knowledge base - loaded from resume_context.js
+// RESUME_CONTEXT is defined in resume_context.js which contains actual resume content extracted from PDFs
 
 let conversationHistory = [];
 
