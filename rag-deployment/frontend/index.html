@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai LLM - Resume Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>💬 Jai LLM</h1>
+            <p class="subtitle">Ask me anything about Jai Adithya Nayani's experience and background</p>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <!-- Welcome message -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hi! I'm Jai's AI assistant. I can answer questions about his experience, skills, projects, and background. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Ask about Jai's experience, skills, projects..."
+                    autocomplete="off"
+                >
+                <button id="sendButton" onclick="sendMessage()">
+                    <span id="buttonText">Send</span>
+                    <span id="buttonLoader" class="loader" style="display: none;"></span>
+                </button>
+            </div>
+
+            <!-- Quick Questions -->
+            <div class="quick-questions">
+                <p class="quick-title">Quick questions:</p>
+                <div class="question-chips">
+                    <button class="chip" onclick="askQuestion('What are your main technical skills?')">
+                        🛠️ Technical Skills
+                    </button>
+                    <button class="chip" onclick="askQuestion('Tell me about your experience')">
+                        💼 Experience
+                    </button>
+                    <button class="chip" onclick="askQuestion('What projects have you worked on?')">
+                        🚀 Projects
+                    </button>
+                    <button class="chip" onclick="askQuestion('What programming languages do you know?')">
+                        💻 Languages
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with ❤️ using Google Gemini & RAG | <a href="https://jai-nayani.github.io/" target="_blank">Portfolio</a> | <a href="https://github.com/jai-nayani" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
+

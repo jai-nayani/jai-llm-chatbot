@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Models (too large for git)
+models/*
+!models/.gitkeep
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Data
+data/*.pdf
+data/*.docx
+data/raw/*
+
+# API Keys
+.env
+config.py
+config_local.py
+*_key.txt
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+chroma_db/
+
