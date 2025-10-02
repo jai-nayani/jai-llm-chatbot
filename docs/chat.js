@@ -2,7 +2,7 @@
 // Works entirely on GitHub Pages - no backend needed!
 
 const GEMINI_API_KEY = 'AIzaSyBP3x80wwVGfoCjNJoy01QrKsaaTzCAkgI';
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent';
 
 // Resume knowledge base - embedded directly in frontend
 const RESUME_CONTEXT = `
