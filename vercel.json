@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "rag-deployment/backend/app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "rag-deployment/frontend/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "rag-deployment/backend/app.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "rag-deployment/frontend/$1"
+    }
+  ],
+  "env": {
+    "GEMINI_API_KEY": "@gemini_api_key"
+  }
+}
+
